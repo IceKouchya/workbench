@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>工作台 | 主页</title>
+  <link rel="stylesheet" href="assets/shell.css">
+</head>
+<body>
+  <main class="workbench" aria-label="工作台">
+    <aside class="sidebar" aria-label="工作台导航">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">WB</span>
+        <div>
+          <div class="brand-name">工作台</div>
+          <div class="brand-subtitle">本地工作区控制台</div>
+        </div>
+      </div>
+
+      <p class="nav-label">总览</p>
+      <nav aria-label="模块入口">
+        <ul class="nav-list">
+          <li><a class="nav-entry" data-route="home" href="#home"><span class="nav-symbol" aria-hidden="true"></span><span class="nav-text">主页</span></a></li>
+        </ul>
+        <p class="nav-label">模块</p>
+        <ul class="nav-list">
+          <li><a class="nav-entry" data-route="tasks" href="#tasks"><span class="nav-symbol" aria-hidden="true"></span><span class="nav-text">个人待办</span><span class="nav-state">本地</span></a></li>
+          <li><a class="nav-entry" data-route="planned-01" href="#planned-01"><span class="nav-symbol" aria-hidden="true"></span><span class="nav-text">淘宝闪购店铺台账</span><span class="nav-state">本地</span></a></li>
+          <li><a class="nav-entry" data-route="planned-02" href="#planned-02"><span class="nav-symbol" aria-hidden="true"></span><span class="nav-text">预留模块 02</span><span class="nav-state">规划中</span></a></li>
+          <li><a class="nav-entry" data-route="planned-03" href="#planned-03"><span class="nav-symbol" aria-hidden="true"></span><span class="nav-text">预留模块 03</span><span class="nav-state">规划中</span></a></li>
+        </ul>
+      </nav>
+      <p class="sidebar-footer">本地静态页面。个人待办仅在授权后读写标准 Markdown。</p>
+    </aside>
+    <section id="view-root" class="content" aria-live="polite" aria-busy="true"></section>
+  </main>
+  <script src="assets/router.js"></script>
+</body>
+</html>

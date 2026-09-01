@@ -1,0 +1,15 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Local dependencies and generated output
+node_modules/
+coverage/
+.scratch/
+
+# Operating-system files
+.DS_Store
+Thumbs.db
